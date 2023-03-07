@@ -1,8 +1,8 @@
 /* Place CSS styles here */
 
-.body {
-  background-image: url("starwarstheme.jpg");
-}
+body {
+  background-color: olive
+} 
 
 .primary-button{
     padding-top: 20px;
