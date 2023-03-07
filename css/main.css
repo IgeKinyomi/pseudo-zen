@@ -23,3 +23,7 @@
 .primary-button:focus {
   box-shadow: 0 0 0 4px aqua;
 } 
+
+body {
+  background-image: url("starwarstheme.jpg");
+}
