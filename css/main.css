@@ -1,24 +1,31 @@
 /* Place CSS styles here */
 
 body {
-  background-image: url("/img/stormtrooper.jpg");
-  background-color: olive;
+  background-image: url("img/jawadesert.jpg");
+  background-color: rgb(156, 187, 128);
   font-family: 'EB Garamond', serif;
+  padding:12px 24px;
+
 } 
 
 h1 {
   font-family: 'Oswald', sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 5px 4px 7px #48b2cb;
   display:flex;
   justify-content: center;
 }
+
 .primary-button{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
-    color: lightpink ;
-    background-color: black;
-    border: 1px solid black;
+    color: #ffb6c1 ;
+    background-color: #000000;
+    border: 1px solid #000000;
     font-size: 20px;
     font-weight: 600;
     border-radius: 8px;
@@ -26,43 +33,47 @@ h1 {
 }
 
 .primary-button:hover {
-  color: black;
-  background-color: lightpink;
+  color: #000000;
+  background-color: #ffb6c1;
 }
 .primary-button:focus {
-    background: yellow;
-    color: red;
+    background: #ffff00;
+    color: #ff0000;
 }
 .primary-button:disabled {
-  background:purple;
-  color: orangered;
+  background:#800080;
+  color: #ff4500;
 }
 
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
 
 .secondary-button{
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  color: lightblue ;
-  background-color: black;
-  border: 1px solid black;
+  color: #add8e6 ;
+  background-color: #000000;
+  border: 1px solid #000000;
   font-size: 20px;
   font-weight: 600;
   border-radius: 8px;
   transition: all 1s ease;
 }
 .secondary-button:hover {
-color: black;
-background-color: lightblue;
+color: #000000;
+background-color: #add8e6;
 }
 .secondary-button:focus {
-  background: yellow;
-  color: red;
+  background: #ffff00;
+  color: #ff0000;
 }
 .secondary-button:disabled {
-  background:purple;
-  color: orangered;
+  background:#800080;
+  color: #ff4500;
 }
 
 
@@ -71,9 +82,9 @@ background-color: lightblue;
   padding-bottom: 20px;
   padding-left: 20px;
   padding-right: 20px;
-  color: lightsalmon ;
-  background-color: black;
-  border: 1px solid black;
+  color: #ffa07a ;
+  background-color: #000000;
+  border: 1px solid #000000;
   font-size: 20px;
   font-weight: 600;
   border-radius: 8px;
@@ -81,25 +92,102 @@ background-color: lightblue;
 }
 
 .error-button:disabled {
-  background:purple;
-  color: orangered;
+  color: #080605;
+  background-color:#e95d5d;
+  
 }
 
-.a:hover {
-  background:black;
-  color: aqua;
+.linkx2{
+  display: flex;
+  justify-content: center;
 }
-.a:focus {}
-.a:visited {}
-.a:disabled {}
+.primarylink:hover {
+  color: #000000;
+  background-color: #ffb6c1;
+}
 
-.label for="name":hover{}
-.label for="comments":hover{}
-:focus
-:disabled
-has an error
-has an error and :hover
-has an error and :focus
+.primarylink:focus { 
+   color: #ff0000;
+   background-color: #ffff00;
+}
+.primarylink:visited {
+  color: #080403; 
+  background-color:#2c60ee;
+  
+}
+
+.primarylink:disabled {
+   color: #080403; 
+   background-color:#ee2c2c;
+
+}
+.secondarylink:hover {
+  color: #000000;
+  background-color: #add8e6;
+}
+.secondarylink:focus { 
+  color: #ff0000;
+  background-color: #ffff00;
+}
+.secondarylink:visited {
+ color: #080403; 
+ background-color:#2cee83;
+ 
+}
+
+.secondarylink:disabled {
+  color: #080403; 
+  background-color:#ee2c2c;
+}
+.fullname:hover{
+  color: #000000;
+  background-color: #ffb6c1;
+}
+.fullname:focus{
+  color: #ff0000;
+  background-color: #ffff00;
+}
+.fullname:disabled{
+  color: #080403; 
+  background-color:#ee2c2c;
+}
+.fullname:has an error{
+  color: #080605;
+  background-color:#e95d5d;
+}
+.fullname:has an error and :hover{
+  color: #080403; 
+  background-color:#2c60ee;
+}
+.fullname:has an error and :focus{
+  color: #080403; 
+  background-color:#ee632c;
+}
+
+.whitebox:hover{
+  color: #000000;
+  background-color: #add8e6;
+}
+.whitebox:focus{
+  color: #ff0000;
+  background-color: #ffff00;
+}
+.whitebox:disabled{
+  color: #080403; 
+  background-color:#ee2c2c;
+}
+.whitebox:has an error{
+  color: #080605;
+  background-color:#e95d5d;
+}
+.whitebox:has an error and :hover{
+  color: #080403; 
+  background-color:#2c60ee;
+}
+.whitebox:has an error and :focus{
+  color: #080403; 
+  background-color:#ee632c;
+}
 
 /* Fake border that doesn't effect the size*/
 /* test it by tabbing*/ 
@@ -112,7 +200,11 @@ has an error and :focus
 } 
 
 .error-button:focus {
-  box-shadow: 0 0 0 4px lightgreen;
+  box-shadow: 0 0 0 4px rgb(250, 15, 15);
+} 
+
+.whitebox:focus {
+  box-shadow: 0 0 0 4px rgb(250, 15, 15);
 } 
 
 @media screen and (max-width: 767px) {
@@ -132,12 +224,13 @@ has an error and :focus
 
 @media screen and (min-width: 480px) {
   body {
-    background-color: rgb(238, 219, 111);
+    background-color: olive(238, 219, 111);
   }
 }
 
 .buttons {
   display: flex;
+  padding 50px;
 }
 
 @media screen and (max-width: 767px) {
