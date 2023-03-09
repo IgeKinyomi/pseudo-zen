@@ -27,6 +27,11 @@ body {
     background: yellow;
     color: red;
 }
+.primary-button:disabled {
+  background:purple;
+  color: orangered;
+}
+
 
 .secondary-button{
   padding-top: 20px;
@@ -49,6 +54,11 @@ background-color: lightblue;
   background: yellow;
   color: red;
 }
+.secondary-button:disabled {
+  background:purple;
+  color: orangered;
+}
+
 
 .error-button{
   padding-top: 20px;
@@ -64,10 +74,26 @@ background-color: lightblue;
   transition: all 1s ease;
 }
 
-.error-button:hover {
-color: black;
-background-color: lightsalmon;
+.error-button:disabled {
+  background:purple;
+  color: orangered;
 }
+
+.a:hover {
+  background:black;
+  color: aqua;
+}
+.a:focus {}
+.a:visited {}
+.a:disabled {}
+
+.label for="name":hover{}
+.label for="comments":hover{}
+:focus
+:disabled
+has an error
+has an error and :hover
+has an error and :focus
 
 /* Fake border that doesn't effect the size*/
 /* test it by tabbing*/ 
