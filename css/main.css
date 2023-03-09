@@ -24,7 +24,8 @@ body {
   background-color: lightpink;
 }
 .primary-button:focus {
-
+    background: yellow;
+    color: red;
 }
 
 .secondary-button{
@@ -43,6 +44,10 @@ body {
 .secondary-button:hover {
 color: black;
 background-color: lightblue;
+}
+.secondary-button:focus {
+  background: yellow;
+  color: red;
 }
 
 .error-button{
