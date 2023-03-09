@@ -1,6 +1,7 @@
 /* Place CSS styles here */
 
 body {
+  background-image: image(starwarstheme.jpg)
   background-color: olive
 } 
 
@@ -21,6 +22,9 @@ body {
 .primary-button:hover {
   color: black;
   background-color: lightpink;
+}
+.primary-button:focus {
+
 }
 
 .secondary-button{
