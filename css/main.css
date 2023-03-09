@@ -3,8 +3,12 @@
 body {
   background-image: url("/img/starwars2.jpg");
   background-color: olive;
+  font-family: 'EB Garamond', serif;
 } 
 
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
 .primary-button{
     padding-top: 20px;
     padding-bottom: 20px;
