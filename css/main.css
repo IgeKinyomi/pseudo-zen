@@ -1,7 +1,7 @@
 /* Place CSS styles here */
 
 body {
-  background-image: url("\img\starwars2.jpg");
+  background-image: url("/pseudo-zen/img/starwars2.jpg");
   background-color: olive;
 } 
 
