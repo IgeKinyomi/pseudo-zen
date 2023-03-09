@@ -8,6 +8,8 @@ body {
 
 h1 {
   font-family: 'Oswald', sans-serif;
+  display:flex;
+  justify-content: center;
 }
 .primary-button{
     padding-top: 20px;
