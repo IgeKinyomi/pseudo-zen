@@ -1,7 +1,7 @@
 /* Place CSS styles here */
 
 body {
-  background-image: url("/img/starwars2.jpg");
+  background-image: url("/img/stormtrooper.jpg");
   background-color: olive;
   font-family: 'EB Garamond', serif;
 } 
@@ -132,7 +132,7 @@ has an error and :focus
 
 @media screen and (min-width: 480px) {
   body {
-    background-color: rgb(61, 204, 61);
+    background-color: rgb(238, 219, 111);
   }
 }
 
